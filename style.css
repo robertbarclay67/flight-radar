@@ -192,6 +192,30 @@ esp-web-install-button { display: block; }
 }
 .setup-steps b { display: block; color: var(--text); font-size: 18px; margin-bottom: 6px; }
 
+/* ---------- Buy / support ---------- */
+.hero-buy { margin: 18px 0 0; }
+.buy {
+  margin-top: 28px; padding: 20px 22px;
+  display: flex; gap: 20px; align-items: center; justify-content: space-between;
+  border: 1px solid rgba(52, 195, 255, 0.35); border-radius: var(--radius);
+  background: rgba(52, 195, 255, 0.07);
+}
+.buy p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+.buy .btn { flex: none; }
+.support-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 40px; }
+.support-card {
+  padding: 32px; border: 1px solid var(--line); border-radius: 20px;
+  background: rgba(16, 39, 66, 0.6);
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.support-card h3 { font-size: 24px; }
+.support-card > p { margin: 0 0 20px; }
+.disclosure { margin-top: 16px !important; }
+.qr-row { display: flex; gap: 16px; margin: 0 0 20px; width: 100%; }
+.qr-row figure { margin: 0; flex: 1; text-align: center; }
+.qr-row img { background: #fff; border-radius: 12px; padding: 6px; width: 100%; max-width: 200px; margin: 0 auto; }
+.qr-row figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+
 /* ---------- FAQ ---------- */
 details {
   border: 1px solid var(--line); border-radius: 12px;
@@ -215,6 +239,7 @@ details p { margin: 0 0 18px; color: var(--muted); }
   .feature.flip .device { order: 0; }
   .hero-device { transform: none; }
   .grid { grid-template-columns: repeat(2, 1fr); }
+  .support-grid { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .stats > div:nth-child(3) { border-left: 0; }
   .stats > div:nth-child(n + 3) { border-top: 1px solid var(--line); }
@@ -231,6 +256,8 @@ details p { margin: 0 0 18px; color: var(--muted); }
   .grid, .setup-steps { grid-template-columns: 1fr; }
   .device { padding: 10px; border-radius: 14px; }
   .install-card { padding: 22px; }
+  .buy { flex-direction: column; align-items: flex-start; }
+  .support-card { padding: 22px; }
   .stats strong { font-size: 24px; }
   .stats > div { padding: 16px; }
 }
