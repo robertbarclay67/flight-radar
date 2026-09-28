@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flight Radar: live air traffic on a 7-inch touchscreen</title>
+  <meta name="description" content="Free firmware that turns the Waveshare ESP32-S3-Touch-LCD-7 into a live flight tracker: live map and radar, flight routes, weather and 9,000+ airports. Install from your browser.">
+  <meta property="og:title" content="Flight Radar">
+  <meta property="og:description" content="Live air traffic on a 7-inch touchscreen. Install from your browser in minutes.">
+  <meta property="og:image" content="media/poster.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230a1c33' stroke='%2334c3ff' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%2334c3ff' stroke-opacity='.5'/%3E%3Cpath d='M16 16 L16 3 A13 13 0 0 1 27 10 Z' fill='%2334c3ff' fill-opacity='.6'/%3E%3C/svg%3E">
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Flight Radar home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Flight Radar</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#video">Video</a>
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="#install">Install</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="radar" aria-hidden="true"><div class="sweep"></div></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Free firmware &middot; Version 4.0.3</p>
+        <h1>Live air traffic on your desk.</h1>
+        <p class="lede">Flight Radar turns the Waveshare ESP32-S3 7-inch touchscreen into a live flight tracker. Every plane around you, where it's going, the weather on the way and 9,000+ airports, all at a tap.</p>
+        <div class="cta-row">
+          <a class="btn" href="#install">Install in your browser</a>
+          <a class="btn btn-ghost" href="#video">&#9654;&nbsp; Watch the video</a>
+        </div>
+      </div>
+      <div class="device hero-device">
+        <img src="shots/01_livemap.jpg" width="800" height="480" alt="Flight Radar's live map around Los Angeles: 94 aircraft coloured by altitude, airport labels, and a list of the nearest flights.">
+      </div>
+    </div>
+    <div class="wrap stats">
+      <div><strong>1&ndash;500 mi</strong><span>range, pinch to zoom</span></div>
+      <div><strong>9,000+</strong><span>airports built in</span></div>
+      <div><strong>64</strong><span>terminal maps on board</span></div>
+      <div><strong>$0</strong><span>no account, no API keys</span></div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="section">
+    <div class="wrap narrow center">
+      <p class="eyebrow">See it in action</p>
+      <h2>Everything it does, in under two minutes</h2>
+    </div>
+    <div class="wrap video-wrap">
+      <video controls preload="metadata" poster="media/poster.jpg" playsinline>
+        <source src="media/flight-radar-promo.mp4" type="video/mp4">
+        Your browser can't play this video. <a href="media/flight-radar-promo.mp4">Download it instead</a>.
+      </video>
+    </div>
+    <p class="wrap center small muted">1:42 &middot; 1080p &middot; recorded on a real board &middot; <a href="media/flight-radar-promo.mp4" download>Download MP4</a></p>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="wrap narrow center">
+      <p class="eyebrow">Features</p>
+      <h2>A flight tracker, a pilot's reference and a conversation piece</h2>
+    </div>
+
+    <div class="wrap feature">
+      <div class="device"><img src="shots/06_flightview.jpg" width="800" height="480" loading="lazy" alt="Flight view for Southwest 2437 from San Jose to Los Angeles, with its flown path on a satellite map, a photo of the aircraft type, runways, altitude and speed."></div>
+      <div class="feature-copy">
+        <p class="tag">Flight view</p>
+        <h3>Tap a plane. Get the whole story.</h3>
+        <p>Airline, route, aircraft type with a photo, altitude, speed and climb rate, updated every few seconds. The departure runway shows under the origin city, and the likely landing runway under the destination.</p>
+        <ul class="ticks">
+          <li>The path it has flown and the course still to go</li>
+          <li>Tap the tail number for the FAA registration</li>
+          <li><b>APPR</b> zooms in and follows it down to the runway</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap feature flip">
+      <div class="device"><img src="shots/21_wide_wx.jpg" width="800" height="480" loading="lazy" alt="A 500-mile view around Chicago showing 600 of 1,878 aircraft with storms on the rain radar overlay."></div>
+      <div class="feature-copy">
+        <p class="tag">Live map and radar</p>
+        <h3>From one mile to five hundred</h3>
+        <p>Street map, satellite or a classic radar scope. Planes are coloured by altitude and labelled without clutter. Zoom right down to the gates or out to see thousands of flights across a whole region.</p>
+        <ul class="ticks">
+          <li>Rain radar overlay with one tap</li>
+          <li>Drag the map to explore anywhere</li>
+          <li>Aircraft list by distance, or all at once</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap feature">
+      <div class="device"><img src="shots/14b_ground_close.jpg" width="800" height="480" loading="lazy" alt="Close-up of a terminal at Los Angeles International with shops, restaurants and gates mapped over satellite imagery."></div>
+      <div class="feature-copy">
+        <p class="tag">Airports</p>
+        <h3>9,000+ airports in its memory</h3>
+        <p>Runway diagrams, address and phone, radio frequencies, fuel and services, and the latest weather. The 64 busiest airports have full terminal maps built in, down to the coffee shops.</p>
+        <ul class="ticks">
+          <li>METAR and TAF with flight category</li>
+          <li>Fuel, repairs and services from FAA data</li>
+          <li>A photo of each major airport</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap grid">
+      <figure class="card">
+        <div class="device small"><img src="shots/03_radar.jpg" width="800" height="480" loading="lazy" alt="Radar mode with a green sweep over Los Angeles traffic."></div>
+        <figcaption><b>Radar mode</b>A sweeping scope with trails, for the traditionalists.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="device small"><img src="shots/22_flight_planned.jpg" width="800" height="480" loading="lazy" alt="United flight from Chicago to Cancun over the Gulf of Mexico with its flown path and planned course."></div>
+        <figcaption><b>Where it's been, where it's going</b>Flown path, planned course and the likely landing runway.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="device small"><img src="shots/07_owner.jpg" width="800" height="480" loading="lazy" alt="Owner card for N459WN from the FAA registry: Southwest Airlines, Boeing 737-7H4 built in 2004."></div>
+        <figcaption><b>Who owns it</b>Registration details straight from the FAA.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="device small"><img src="shots/13_airport_wx.jpg" width="800" height="480" loading="lazy" alt="Weather tab for Los Angeles International showing VFR conditions with the METAR and TAF."></div>
+        <figcaption><b>Airport weather</b>Conditions, forecast and flight category.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="device small"><img src="shots/17_search_results.jpg" width="800" height="480" loading="lazy" alt="Search results for Portland listing five airports in Oregon and Maine."></div>
+        <figcaption><b>Go anywhere</b>Search by code, city or name, or pick from 64 world hubs.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="device small"><img src="shots/19_recent.jpg" width="800" height="480" loading="lazy" alt="Recent flights list with airlines, aircraft types and routes."></div>
+        <figcaption><b>Recent flights</b>Your last 25 flights, ready to reopen.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Install -->
+  <section id="install" class="section install">
+    <div class="wrap install-inner">
+      <div>
+        <p class="eyebrow">Install</p>
+        <h2>Up and running in about five minutes</h2>
+        <p class="muted">No software to install. Your browser writes the firmware straight to the board over USB.</p>
+
+        <h3 class="mini">You'll need</h3>
+        <ul class="ticks">
+          <li>A <b>Waveshare ESP32-S3-Touch-LCD-7</b> (800&times;480). Not the 7B.</li>
+          <li>A USB-C data cable</li>
+          <li>Chrome or Edge on a Windows, Mac, Linux or ChromeOS computer</li>
+          <li>A 2.4 GHz Wi-Fi network</li>
+        </ul>
+      </div>
+
+      <div class="install-card">
+        <ol class="steps">
+          <li><span>1</span>Plug the display into your computer using the port labelled <b>USB</b>.</li>
+          <li><span>2</span>Click the button and choose the port (usually "USB JTAG/serial debug unit").</li>
+          <li><span>3</span>Tick <b>Erase device</b> and click <b>Install</b>. It takes 2&ndash;3 minutes.</li>
+        </ol>
+        <esp-web-install-button manifest="firmware/manifest.json">
+          <button slot="activate" class="btn btn-wide">Connect and install</button>
+          <span slot="unsupported" class="note">Your browser can't install firmware. Please use Chrome or Edge on a computer.</span>
+          <span slot="not-allowed" class="note">Installing needs this page to be served over https (or from localhost).</span>
+        </esp-web-install-button>
+        <p class="note">Port not showing, or the install stops partway? Hold <b>BOOT</b>, tap <b>RESET</b>, let go of <b>BOOT</b> and try again. Press <b>RESET</b> when it's done if the screen stays dark.</p>
+        <p class="small muted">Prefer the command line? <a href="firmware/FlightRadar-v4.0.3.zip" download>Download the package</a> (firmware, installer and README) and flash it with esptool.</p>
+      </div>
+    </div>
+
+    <div class="wrap setup">
+      <h3 class="mini">Then set it up on the touchscreen</h3>
+      <div class="setup-steps">
+        <div><b>Wi-Fi</b>Pick your network and type the password on the on-screen keyboard.</div>
+        <div><b>Location</b>Choose your country and enter your ZIP or postal code.</div>
+        <div><b>Done</b>Units are imperial in the USA and metric elsewhere. Planes appear within seconds.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="wrap narrow">
+      <p class="eyebrow center">FAQ</p>
+      <h2 class="center">Questions</h2>
+      <details>
+        <summary>Does it need an account or subscription?</summary>
+        <p>No. It uses free public services for aircraft positions, routes, maps and weather, with no sign-up or API keys.</p>
+      </details>
+      <details>
+        <summary>Where does the flight data come from?</summary>
+        <p>Aircraft positions come from community ADS-B networks (adsb.lol, with adsb.fi as a backup), fed by volunteers' receivers. Routes come from adsb.im, flight history from the OpenSky Network, owners from the FAA registry, weather from aviationweather.gov and RainViewer, and airport data from OurAirports, the FAA and OpenStreetMap.</p>
+      </details>
+      <details>
+        <summary>Why doesn't a flight show a route?</summary>
+        <p>Private, training, cargo charter and military flights often have no published schedule. When the schedule doesn't match where the plane is actually heading, Flight Radar shows "Route not available" instead of guessing.</p>
+      </details>
+      <details>
+        <summary>What about my Wi-Fi password and location?</summary>
+        <p>They're stored only on the board. The display sends the approximate location of the area you're viewing (your postal code's centre, or the airport or map area you picked) to the data services so they can return nearby flights. It never sends your Wi-Fi details anywhere.</p>
+      </details>
+      <details>
+        <summary>Will it work with 5 GHz Wi-Fi?</summary>
+        <p>No. The ESP32-S3 supports 2.4 GHz networks only. Most home routers offer both.</p>
+      </details>
+      <details>
+        <summary>Can I use it to fly?</summary>
+        <p>No. Flight Radar is for fun and curiosity. Routes, runways, frequencies and weather come from public and community sources and may be wrong or out of date. <b>Not for navigation.</b></p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Flight Radar 4.0.3</span></div>
+    <p class="small muted">Data: adsb.lol &middot; adsb.fi &middot; adsb.im &middot; adsbdb &middot; The OpenSky Network &middot; FAA &middot; OurAirports &middot; &copy; OpenStreetMap contributors &middot; RainViewer &middot; aviationweather.gov (NOAA). Maps and imagery: Esri, HERE, Garmin, USGS, Maxar, Earthstar Geographics. Aircraft and airport photos: Wikipedia / Wikimedia Commons. Waveshare is a trademark of its owner; this project is not affiliated with Waveshare.</p>
+    <p class="small muted">For personal, non-commercial use. Not for navigation.</p>
+  </div>
+</footer>
+
+</body>
+</html>
