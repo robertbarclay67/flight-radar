@@ -163,6 +163,7 @@ video {
 .card figcaption b { display: block; color: var(--text); font-size: 17px; margin-bottom: 4px; }
 
 /* ---------- Install ---------- */
+.howto-video { margin-bottom: 72px; }
 .install { background: linear-gradient(180deg, rgba(16, 39, 66, 0) 0%, rgba(16, 39, 66, 0.55) 30%, rgba(16, 39, 66, 0.55) 70%, rgba(16, 39, 66, 0) 100%); }
 .install-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
 h3.mini { font-size: 20px; margin-top: 32px; }
