@@ -1,13 +1,18 @@
 # Flight Radar website
 
-A single-page site for Flight Radar 4.0.3: the promo video, features, and a one-click
-browser installer for the Waveshare ESP32-S3-Touch-LCD-7.
+The Flight Radar site: the display firmware page (promo video, features and a one-click
+browser installer for the Waveshare ESP32-S3-Touch-LCD-7, firmware 4.0.5), and pages for the
+Android and Windows apps (1.0.4).
 
 ```
-index.html          the page
-style.css           styles
-media/              promo video (MP4) and its poster image
+index.html          the display page
+android.html        the Android app page (tip jar, no affiliate links)
+windows.html        the Windows app page (tip jar, no affiliate links)
+style.css           styles for all three
+media/              videos (MP4) and their posters, tip-jar QR codes
 shots/              screenshots from the board
+apps/               screenshots of the apps
+download/           the Android APK and the Windows zip
 firmware/           manifest.json + firmware image for the installer, and the download zip
 ```
 
@@ -24,7 +29,7 @@ Then open http://localhost:8770 in Chrome or Edge. The installer works from loca
 ## Put it online
 
 The installer needs the page to be served over **https**. Any static host works; the whole
-folder is about 25 MB and every file is under 15 MB.
+folder is about 105 MB and every file is under 25 MB (GitHub's limit is 100 MB per file).
 
 - **GitHub Pages:** create a repository, upload the contents of this folder, then
   Settings > Pages > Deploy from branch (main, root). The site appears at
@@ -36,3 +41,8 @@ folder is about 25 MB and every file is under 15 MB.
 
 Replace the `.bin` in `firmware/`, update its file name and `version` in
 `firmware/manifest.json`, and update the version shown in `index.html`.
+
+## Updating the apps
+
+Put the new APK and zip in `download/` (versioned names), delete the old ones, and update
+the version and download links in `android.html` and `windows.html`.

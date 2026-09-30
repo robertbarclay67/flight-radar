@@ -1,12 +1,12 @@
 {
   "name": "Flight Radar",
-  "version": "4.0.3",
+  "version": "4.0.5",
   "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32-S3",
       "parts": [
-        { "path": "flight-radar-v4.0.3-waveshare-esp32s3-lcd7.bin", "offset": 0 }
+        { "path": "flight-radar-v4.0.5-waveshare-esp32s3-lcd7.bin", "offset": 0 }
       ]
     }
   ]

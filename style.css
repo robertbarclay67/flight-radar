@@ -217,6 +217,44 @@ esp-web-install-button { display: block; }
 .qr-row img { background: #fff; border-radius: 12px; padding: 6px; width: 100%; max-width: 200px; margin: 0 auto; }
 .qr-row figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
 
+/* ---------- App pages (Android, Windows) ---------- */
+.phone {
+  background: #0d0f13; border: 2px solid #3a404a; border-radius: 36px;
+  padding: 12px; max-width: 320px; margin: 0 auto;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+.phone img { border-radius: 26px; width: 100%; }
+.phone.small { border-radius: 26px; padding: 8px; max-width: 240px; }
+.phone.small img { border-radius: 19px; }
+.window {
+  background: #1b1f26; border: 1px solid #3a404a; border-radius: 12px; overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
+}
+.window::before {
+  content: ""; display: block; height: 30px; background: #242a33;
+  background-image: radial-gradient(circle at 18px 15px, #4a5260 5px, transparent 6px),
+    radial-gradient(circle at 38px 15px, #4a5260 5px, transparent 6px), radial-gradient(circle at 58px 15px, #4a5260 5px, transparent 6px);
+}
+.window img { width: 100%; }
+.hero-phone { transform: perspective(1400px) rotateY(-8deg); }
+.app-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 56px; }
+.app-grid.wide { grid-template-columns: repeat(3, 1fr); }
+.app-grid .card figcaption { text-align: left; }
+.dl-meta { margin: 14px 0 0; }
+.cross { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 40px; }
+.cross a.support-card { color: var(--text); transition: border-color 0.15s ease; }
+.cross a.support-card:hover { text-decoration: none; border-color: var(--accent); }
+.cross .support-card p { color: var(--muted); margin: 0; }
+.nav-links a.here { color: var(--text); }
+@media (max-width: 960px) {
+  .app-grid, .app-grid.wide { grid-template-columns: repeat(2, 1fr); }
+  .cross { grid-template-columns: 1fr; }
+  .hero-phone { transform: none; }
+}
+@media (max-width: 640px) {
+  .app-grid.wide { grid-template-columns: 1fr; }
+}
+
 /* ---------- FAQ ---------- */
 details {
   border: 1px solid var(--line); border-radius: 12px;

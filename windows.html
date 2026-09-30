@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flight Radar for Windows: live air traffic on your PC</title>
+  <meta name="description" content="Free Flight Radar app for Windows 10 and 11: live map and radar, flight routes with real aircraft photos, weather and 9,000+ airports on a big screen. No account, no ads.">
+  <meta property="og:title" content="Flight Radar for Windows">
+  <meta property="og:description" content="Live air traffic on your PC. Free, no account, no ads.">
+  <meta property="og:image" content="media/windows-poster.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230a1c33' stroke='%2334c3ff' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%2334c3ff' stroke-opacity='.5'/%3E%3Cpath d='M16 16 L16 3 A13 13 0 0 1 27 10 Z' fill='%2334c3ff' fill-opacity='.6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Flight Radar for Windows">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Flight Radar</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#video">Video</a>
+      <a href="#features">Features</a>
+      <a href="#install">How to install</a>
+      <a href="#support">Support</a>
+      <a href="android.html">Android</a>
+      <a href="index.html">Display</a>
+    </nav>
+    <a class="btn btn-small" href="#install">Download</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="radar" aria-hidden="true"><div class="sweep"></div></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Free Windows app &middot; Version 1.0.4</p>
+        <h1>Live air traffic on your PC.</h1>
+        <p class="lede">Every plane around you on a big live map, where it's going, a photo of the actual aircraft, the weather on the way and 9,000+ airports. No account, no ads, no installer.</p>
+        <div class="cta-row">
+          <a class="btn" href="download/FlightRadar-Windows-1.0.4.zip" download>Download for Windows</a>
+          <a class="btn btn-ghost" href="#video">&#9654;&nbsp; Watch the video</a>
+        </div>
+        <p class="small muted dl-meta">Windows 10 or 11, 64-bit &middot; 15 MB zip &middot; <a href="#install">How to install</a></p>
+      </div>
+      <div class="window hero-device">
+        <img src="apps/windows/home.jpg" width="1878" height="1104" alt="Flight Radar on Windows: the live map around London Heathrow with aircraft coloured by altitude, the traffic filter and map buttons on the left.">
+      </div>
+    </div>
+  </section>
+
+  <section id="video" class="section">
+    <div class="wrap narrow center">
+      <p class="eyebrow">See it in action</p>
+      <h2>A quick tour of the app</h2>
+    </div>
+    <div class="wrap video-wrap">
+      <video controls preload="metadata" poster="media/windows-poster.jpg" playsinline>
+        <source src="media/flight-radar-windows.mp4" type="video/mp4">
+        Your browser can't play this video. <a href="media/flight-radar-windows.mp4">Download it instead</a>.
+      </video>
+    </div>
+    <p class="wrap center small muted">Real app screens &middot; <a href="media/flight-radar-windows.mp4" download>Download MP4</a></p>
+  </section>
+
+  <section id="features" class="section">
+    <div class="wrap narrow center">
+      <p class="eyebrow">Features</p>
+      <h2>Everything the desk display does, on a big screen</h2>
+    </div>
+    <div class="wrap app-grid wide">
+      <figure class="card">
+        <div class="window"><img src="apps/windows/flight.jpg" width="1878" height="1104" loading="lazy" alt="Flight view with the route map, airline logo, aircraft photo and live altitude and speed."></div>
+        <figcaption><b>Tap a plane</b>Route, airline logo, a photo of the actual aircraft, and live data. FLT shows the whole trip; APPR follows it in.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="window"><img src="apps/windows/sat.jpg" width="1878" height="1104" loading="lazy" alt="Satellite map around Heathrow."></div>
+        <figcaption><b>Map, satellite or radar</b>The view in use is lit. Drag and scroll to explore anywhere.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="window"><img src="apps/windows/radar.jpg" width="1878" height="1104" loading="lazy" alt="Radar mode with a sweeping green scope."></div>
+        <figcaption><b>Radar mode</b>A classic sweeping scope for the traditionalists.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="window"><img src="apps/windows/wx.jpg" width="1878" height="1104" loading="lazy" alt="Live map with the rain radar overlay."></div>
+        <figcaption><b>Rain radar</b>Live weather over the map with one click.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="window"><img src="apps/windows/airport.jpg" width="1878" height="1104" loading="lazy" alt="Los Angeles International airport page with its logo, runway diagram and details."></div>
+        <figcaption><b>9,000+ airports</b>Logos, photos, runway diagrams, frequencies, services and weather.</figcaption>
+      </figure>
+      <figure class="card">
+        <div class="window"><img src="apps/windows/owner.jpg" width="1878" height="1104" loading="lazy" alt="Owner details for a US-registered aircraft from the FAA registry."></div>
+        <figcaption><b>Who owns it</b>Registration details from the FAA for US aircraft.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="install" class="section install">
+    <div class="wrap narrow center howto-head">
+      <p class="eyebrow">Step by step</p>
+      <h2>Watch how to install it</h2>
+      <p class="muted">There's no installer: unzip it and run it. It takes about a minute.</p>
+    </div>
+    <div class="wrap video-wrap howto-video">
+      <video controls preload="none" poster="media/windows-install-poster.jpg" playsinline>
+        <source src="media/flight-radar-windows-install.mp4" type="video/mp4">
+        Your browser can't play this video. <a href="media/flight-radar-windows-install.mp4">Download it instead</a>.
+      </video>
+    </div>
+    <div class="wrap install-inner">
+      <div>
+        <p class="eyebrow">Install</p>
+        <h2>Up and running in a minute</h2>
+        <p class="muted">Windows shows a warning the first time because the app is new and doesn't come from the Microsoft Store. That's expected.</p>
+        <h3 class="mini">You'll need</h3>
+        <ul class="ticks">
+          <li>A PC running 64-bit Windows 10 or 11</li>
+          <li>An internet connection</li>
+        </ul>
+      </div>
+      <div class="install-card">
+        <ol class="steps">
+          <li><span>1</span>Click <b>Download for Windows</b> below to get the zip file.</li>
+          <li><span>2</span>Right-click the zip in your Downloads folder, choose <b>Extract All</b>, and click <b>Extract</b>.</li>
+          <li><span>3</span>In the new folder, double-click <b>flight_radar</b>.</li>
+          <li><span>4</span>If a blue "Windows protected your PC" box appears, click <b>More info</b>, then <b>Run anyway</b>.</li>
+        </ol>
+        <a class="btn btn-wide" href="download/FlightRadar-Windows-1.0.4.zip" download>Download for Windows</a>
+        <p class="note">Keep all the files in the folder together: the app needs them. To pin it, right-click flight_radar and choose <b>Pin to Start</b>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="support" class="section">
+    <div class="wrap narrow center">
+      <p class="eyebrow">Support the project</p>
+      <h2>Flight Radar is free. Help keep it that way.</h2>
+      <p class="muted">There are no ads, no subscriptions and no accounts. If you enjoy it, a small tip helps pay for future updates and new projects.</p>
+    </div>
+    <div class="wrap support-grid" style="grid-template-columns: 1fr; max-width: 620px;">
+      <div class="support-card" style="align-items: center; text-align: center;">
+        <h3>Chip in a couple of bucks</h3>
+        <p class="muted">Any amount helps. Scan a code with your phone's camera.</p>
+        <div class="qr-row">
+          <figure>
+            <img src="media/venmo-qr.jpg" width="525" height="540" loading="lazy" alt="Venmo QR code for @Robertbarclay67">
+            <figcaption>Venmo</figcaption>
+          </figure>
+          <figure>
+            <img src="media/paypal-qr.jpg" width="416" height="540" loading="lazy" alt="PayPal QR code">
+            <figcaption>PayPal</figcaption>
+          </figure>
+        </div>
+        <a class="btn btn-ghost" href="https://venmo.com/code?user_id=2998481488707584054&amp;created=1790629693" target="_blank" rel="noopener">Donate with Venmo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap narrow center">
+      <p class="eyebrow">More Flight Radar</p>
+      <h2>Also in your pocket and on your desk</h2>
+    </div>
+    <div class="wrap cross">
+      <a class="support-card" href="android.html">
+        <h3>Flight Radar for Android</h3>
+        <p>The same app on your phone or tablet. Android 7 and later.</p>
+      </a>
+      <a class="support-card" href="index.html">
+        <h3>Flight Radar display</h3>
+        <p>Free firmware for a 7-inch touchscreen that sits on your desk and shows the sky around you.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="wrap narrow">
+      <p class="eyebrow center">FAQ</p>
+      <h2 class="center">Questions</h2>
+      <details>
+        <summary>Why does Windows warn me about it?</summary>
+        <p>Windows SmartScreen warns about apps that are new and haven't been downloaded many times yet. Click <b>More info</b> and <b>Run anyway</b>. You'll only see it once.</p>
+      </details>
+      <details>
+        <summary>How do I update it?</summary>
+        <p>Download the new zip and extract it over the old folder, or into a new one. Your settings and recent flights are kept.</p>
+      </details>
+      <details>
+        <summary>Does it need an account or subscription?</summary>
+        <p>No. It uses free public services for aircraft positions, routes, maps and weather, with no sign-up.</p>
+      </details>
+      <details>
+        <summary>How does it know where I am?</summary>
+        <p>It asks Windows for your approximate location, if location is turned on. It stays on your PC; the app sends only the area you're looking at to the data services. Without location, drag the map or pick an airport.</p>
+      </details>
+      <details>
+        <summary>Where does the flight data come from?</summary>
+        <p>Aircraft positions come from community ADS-B networks (adsb.lol, with adsb.fi as a backup), fed by volunteers' receivers. Routes come from adsb.im, flight history from the OpenSky Network, aircraft photos from Planespotters.net photographers, owners from the FAA registry, weather from aviationweather.gov and RainViewer, and airport data from OurAirports, the FAA and OpenStreetMap.</p>
+      </details>
+      <details>
+        <summary>Can I use it to fly?</summary>
+        <p>No. Flight Radar is for fun and curiosity. Routes, runways, frequencies and weather come from public and community sources and may be wrong or out of date. <b>Not for navigation.</b></p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Flight Radar for Windows 1.0.4</span></div>
+    <p class="small muted">Data: adsb.lol &middot; adsb.fi &middot; adsb.im &middot; adsbdb &middot; The OpenSky Network &middot; FAA &middot; OurAirports &middot; &copy; OpenStreetMap contributors &middot; RainViewer &middot; aviationweather.gov (NOAA). Maps and imagery: Esri, HERE, Garmin, USGS, Maxar. Aircraft photos: Planespotters.net photographers (credited on each photo), Wikipedia / Wikimedia Commons. Airline logos via pics.avs.io; logos are trademarks of their airlines. Airline codes: OpenFlights. Windows is a trademark of Microsoft Corporation.</p>
+    <p class="small muted">Flight Radar is free for personal use. Not for navigation. &middot; <a href="android.html">Android</a> &middot; <a href="index.html">Display</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
