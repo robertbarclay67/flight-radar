@@ -40,7 +40,7 @@
     <div class="radar" aria-hidden="true"><div class="sweep"></div></div>
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">Free firmware &middot; Version 4.0.5</p>
+        <p class="eyebrow">Free firmware &middot; Version 4.0.6</p>
         <h1>Live air traffic on your desk.</h1>
         <p class="lede">Flight Radar turns the Waveshare ESP32-S3 7-inch touchscreen into a live flight tracker. Every plane around you, where it's going, the weather on the way and 9,000+ airports, all at a tap.</p>
         <div class="cta-row">
@@ -90,7 +90,7 @@
         <h3>Tap a plane. Get the whole story.</h3>
         <p>Airline and its logo, route, aircraft type, a photo of the actual aircraft when one exists, altitude, speed and climb rate, updated every few seconds. The departure runway shows under the origin city, and the likely landing runway under the destination.</p>
         <ul class="ticks">
-          <li>The path it has flown and the course still to go</li>
+          <li>The path it has flown, the course still to go, and time since takeoff and time left</li>
           <li>Tap the tail number for the FAA registration</li>
           <li><b>FLT</b> shows the whole route; <b>APPR</b> zooms in to suit its altitude and follows it down</li>
         </ul>
@@ -121,6 +121,7 @@
           <li>METAR and TAF with flight category</li>
           <li>Fuel, repairs and services from FAA data</li>
           <li>Airport logos and real photos of thousands of airports</li>
+          <li>Live FAA airport events and G-AIRMET forecasts from the menu</li>
         </ul>
       </div>
     </div>
@@ -200,8 +201,9 @@
           <span slot="unsupported" class="note">Your browser can't install firmware. Please use Chrome or Edge on a computer.</span>
           <span slot="not-allowed" class="note">Installing needs this page to be served over https (or from localhost).</span>
         </esp-web-install-button>
+        <p class="note">Updating from an earlier version? Leave <b>Erase device</b> unticked to keep your Wi-Fi and home settings.</p>
         <p class="note">Port not showing, or the install stops partway? Hold <b>BOOT</b>, tap <b>RESET</b>, let go of <b>BOOT</b> and try again. Press <b>RESET</b> when it's done if the screen stays dark.</p>
-        <p class="small muted">Prefer the command line? <a href="firmware/FlightRadar-v4.0.5.zip" download>Download the package</a> (firmware, installer and README) and flash it with esptool.</p>
+        <p class="small muted">Prefer the command line? <a href="firmware/FlightRadar-v4.0.6.zip" download>Download the package</a> (firmware, installer and README) and flash it with esptool.</p>
       </div>
     </div>
 
@@ -304,7 +306,7 @@
 
 <footer class="footer">
   <div class="wrap">
-    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Flight Radar 4.0.5</span></div>
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Flight Radar 4.0.6</span></div>
     <p class="small muted">Data: adsb.lol &middot; adsb.fi &middot; adsb.im &middot; adsbdb &middot; The OpenSky Network &middot; FAA &middot; OurAirports &middot; &copy; OpenStreetMap contributors &middot; RainViewer &middot; aviationweather.gov (NOAA). Maps and imagery: Esri, HERE, Garmin, USGS, Maxar, Earthstar Geographics. Aircraft photos: Planespotters.net photographers (credited on each photo), Wikipedia / Wikimedia Commons; airport photos: Wikipedia / Wikimedia Commons. Airline logos via pics.avs.io; logos are trademarks of their airlines. Airline codes: OpenFlights. Waveshare is a trademark of its owner; this project is not affiliated with Waveshare.</p>
     <p class="small muted">As an Amazon Associate I earn from qualifying purchases. Flight Radar is free for personal use. Not for navigation.</p>
   </div>

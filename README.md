@@ -1,7 +1,7 @@
 # Flight Radar website
 
 The Flight Radar site: the display firmware page (promo video, features and a one-click
-browser installer for the Waveshare ESP32-S3-Touch-LCD-7, firmware 4.0.5), and pages for the
+browser installer for the Waveshare ESP32-S3-Touch-LCD-7, firmware 4.0.6), and pages for the
 Android and Windows apps (1.0.5).
 
 ```
@@ -13,7 +13,7 @@ media/              videos (MP4) and their posters, tip-jar QR codes
 shots/              screenshots from the board
 apps/               screenshots of the apps
 download/           the Android APK and the Windows zip
-firmware/           manifest.json + firmware image for the installer, and the download zip
+firmware/           manifest.json + the firmware in four parts for the installer (updates keep settings), and the download zip
 ```
 
 ## Try it on your computer
@@ -39,8 +39,9 @@ folder is about 105 MB and every file is under 25 MB (GitHub's limit is 100 MB p
 
 ## Updating the firmware
 
-Replace the `.bin` in `firmware/`, update its file name and `version` in
-`firmware/manifest.json`, and update the version shown in `index.html`.
+The installer flashes four parts (bootloader at 0x0, partitions at 0x8000, boot_app0 at 0xe000, the app at
+0x10000), so updating without erasing keeps the board's settings (they live at 0x9000). Replace them in
+`firmware/`, update their names and `version` in `firmware/manifest.json`, and the version in `index.html`.
 
 ## Updating the apps
 
