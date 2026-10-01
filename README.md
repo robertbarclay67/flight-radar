@@ -1,8 +1,8 @@
 # Flight Radar website
 
 The Flight Radar site: the display firmware page (promo video, features and a one-click
-browser installer for the Waveshare ESP32-S3-Touch-LCD-7, firmware 4.0.6), and pages for the
-Android and Windows apps (1.0.5).
+browser installer for the Waveshare ESP32-S3-Touch-LCD-7, firmware 4.0.7), and pages for the
+Android and Windows apps (1.0.6).
 
 ```
 index.html          the display page
