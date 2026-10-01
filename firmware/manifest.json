@@ -1,15 +1,15 @@
 {
   "name": "Flight Radar",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32-S3",
       "parts": [
-        { "path": "bootloader-v4.0.7.bin", "offset": 0 },
-        { "path": "partitions-v4.0.7.bin", "offset": 32768 },
+        { "path": "bootloader-v4.0.8.bin", "offset": 0 },
+        { "path": "partitions-v4.0.8.bin", "offset": 32768 },
         { "path": "boot_app0.bin", "offset": 57344 },
-        { "path": "flight-radar-v4.0.7-app.bin", "offset": 65536 }
+        { "path": "flight-radar-v4.0.8-app.bin", "offset": 65536 }
       ]
     }
   ]
