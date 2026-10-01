@@ -300,3 +300,10 @@ details p { margin: 0 0 18px; color: var(--muted); }
   .stats strong { font-size: 24px; }
   .stats > div { padding: 16px; }
 }
+
+/* ---------- Version history pages ---------- */
+.history-title { font-size: clamp(30px, 4vw, 44px); }
+.release { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line); }
+.release h2 { font-size: 24px; margin-bottom: 4px; }
+.release .ticks li { color: var(--muted); }
+.release .ticks li b { color: var(--text); }
