@@ -40,7 +40,7 @@
     <div class="radar" aria-hidden="true"><div class="sweep"></div></div>
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">Free firmware &middot; Version 4.0.8 &middot; <a href="changes-display.html">What's new</a></p>
+        <p class="eyebrow">Free firmware &middot; Version 4.0.9 &middot; <a href="changes-display.html">What's new</a></p>
         <h1>Live air traffic on your desk.</h1>
         <p class="lede">Flight Radar turns the Waveshare ESP32-S3 7-inch touchscreen into a live flight tracker. Every plane around you, where it's going, the weather on the way and 9,000+ airports, all at a tap.</p>
         <div class="cta-row">
@@ -93,6 +93,8 @@
           <li>The path it has flown, the course still to go, and time since takeoff and time left</li>
           <li>Tap the tail number for the FAA registration</li>
           <li><b>FLT</b> shows the whole route; <b>APPR</b> zooms in to suit its altitude and follows it down</li>
+          <li>Opens right on the map you were looking at; the <b>INFO</b> tab tucks the details away to follow it full screen</li>
+          <li>Gate numbers and taxiways close in, to follow it on the ground all the way to the gate</li>
         </ul>
       </div>
     </div>
@@ -203,7 +205,7 @@
         </esp-web-install-button>
         <p class="note">Updating from an earlier version? Leave <b>Erase device</b> unticked to keep your Wi-Fi and home settings.</p>
         <p class="note">Port not showing, or the install stops partway? Hold <b>BOOT</b>, tap <b>RESET</b>, let go of <b>BOOT</b> and try again. Press <b>RESET</b> when it's done if the screen stays dark.</p>
-        <p class="small muted">Prefer the command line? <a href="firmware/FlightRadar-v4.0.8.zip" download>Download the package</a> (firmware, installer and README) and flash it with esptool.</p>
+        <p class="small muted">Prefer the command line? <a href="firmware/FlightRadar-v4.0.9.zip" download>Download the package</a> (firmware, installer and README) and flash it with esptool.</p>
       </div>
     </div>
 
@@ -228,7 +230,7 @@
       <a class="support-card" href="android.html">
         <p class="tag">Android</p>
         <h3>Live air traffic in your pocket</h3>
-        <p>For phones and tablets running Android 7 or later.</p>
+        <p>For phones and tablets running Android 7 or later. New: <b>POINT</b>, hold your phone up to the sky and every plane is labelled.</p>
       </a>
       <a class="support-card" href="windows.html">
         <p class="tag">Windows</p>
@@ -306,7 +308,7 @@
 
 <footer class="footer">
   <div class="wrap">
-    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Flight Radar 4.0.8</span></div>
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Flight Radar 4.0.9</span></div>
     <p class="small muted"><a href="changes-display.html">Version history: what's new in each release</a></p>
     <p class="small muted">Data: adsb.lol &middot; adsb.fi &middot; adsb.im &middot; adsbdb &middot; The OpenSky Network &middot; FAA &middot; OurAirports &middot; &copy; OpenStreetMap contributors &middot; RainViewer &middot; aviationweather.gov (NOAA). Maps and imagery: Esri, HERE, Garmin, USGS, Maxar, Earthstar Geographics. Aircraft photos: Planespotters.net photographers (credited on each photo), Wikipedia / Wikimedia Commons; airport photos: Wikipedia / Wikimedia Commons. Airline logos via pics.avs.io; logos are trademarks of their airlines. Airline codes: OpenFlights. Waveshare is a trademark of its owner; this project is not affiliated with Waveshare.</p>
     <p class="small muted">As an Amazon Associate I earn from qualifying purchases. Flight Radar is free for personal use. Not for navigation.</p>

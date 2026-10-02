@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flight Radar for Android: live air traffic in your pocket</title>
-  <meta name="description" content="Free Flight Radar app for Android phones and tablets: live map and radar, flight routes with real aircraft photos, weather and 9,000+ airports. No account, no ads.">
+  <meta name="description" content="Free Flight Radar app for Android phones and tablets: point your phone at the sky to identify planes, live map and radar, flight routes with real aircraft photos, weather and 9,000+ airports. No account, no ads.">
   <meta property="og:title" content="Flight Radar for Android">
   <meta property="og:description" content="Live air traffic in your pocket. Free, no account, no ads.">
   <meta property="og:image" content="media/android-poster.jpg">
@@ -21,6 +21,7 @@
       <span>Flight Radar</span>
     </a>
     <nav class="nav-links" aria-label="Sections">
+      <a href="#point">POINT</a>
       <a href="#video">Video</a>
       <a href="#features">Features</a>
       <a href="#install">How to install</a>
@@ -38,18 +39,91 @@
     <div class="radar" aria-hidden="true"><div class="sweep"></div></div>
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">Free Android app &middot; Version 1.0.6 &middot; <a href="changes-android.html">What's new</a></p>
+        <p class="eyebrow">Free Android app &middot; Version 1.0.7 &middot; <a href="changes-android.html">What's new</a></p>
+        <a class="hero-new" href="#point"><b>New:</b> POINT. Hold your phone up to the sky and see every plane labelled &rarr;</a>
         <h1>Live air traffic in your pocket.</h1>
         <p class="lede">Every plane around you on a live map, where it's going and when it lands, a photo of the actual aircraft, the weather on the way and 9,000+ airports. No account, no ads, no subscriptions.</p>
         <div class="cta-row">
-          <a class="btn" href="download/FlightRadar-Android-1.0.6.apk" download>Download for Android</a>
+          <a class="btn" href="download/FlightRadar-Android-1.0.7.apk" download>Download for Android</a>
           <a class="btn btn-ghost" href="#video">&#9654;&nbsp; Watch the video</a>
         </div>
         <p class="small muted dl-meta">Android 7 or later &middot; 22 MB APK &middot; <a href="#install">How to install</a></p>
       </div>
       <div class="phone hero-phone">
-        <img src="apps/android/home.jpg" width="578" height="1124" alt="Flight Radar on an Android phone: the live map around London Heathrow with aircraft coloured by altitude and the ALL / AIRLINE / PRIVATE filter on the left.">
+        <img src="apps/android/home.jpg" width="578" height="1124" alt="Flight Radar on an Android phone: the live map around London Heathrow, with the aircraft count, FIT, APPR and the POINT bullseye along the top, and the - / + range control.">
       </div>
+    </div>
+  </section>
+
+  <section id="point" class="section point">
+    <div class="wrap feature point-feature">
+      <div class="feature-copy">
+        <p class="eyebrow">New in 1.0.7 &middot; POINT</p>
+        <h2>Point your phone at the sky. Know every plane.</h2>
+        <p class="point-lede">Hear a jet overhead and wonder where it's going? Tap the <b>bullseye</b> at the top of the map and hold your phone up. The camera view labels every aircraft in the sky with its flight, altitude and distance, right on top of the plane itself. It's the biggest thing we've ever added to Flight Radar, and honestly it still feels a bit like magic.</p>
+        <ul class="ticks">
+          <li><b>Labels that sit on the plane.</b> Your GPS position, the phone's compass and gyro, and the camera's own field of view put each label where the aircraft really is. Positions are moved on to this very second, so the tags keep up with fast jets.</li>
+          <li><b>Aim and identify.</b> The plane nearest the crosshair lights up, with its type, altitude, distance and speed in a card at the bottom.</li>
+          <li><b>Tap to dive in.</b> Tap any label, or the card, for the full flight view: route, airline, a photo of the actual aircraft and time to landing.</li>
+          <li><b>See farther.</b> Pinch or tap 1&times; / 2&times; / 5&times; to zoom the camera on distant traffic, and pick 10, 25 or 50 miles.</li>
+          <li><b>Hold it any way.</b> Portrait or landscape. If the compass needs it, the app asks you to wave the phone in a figure 8.</li>
+        </ul>
+        <p class="small muted">Android phones with a camera and compass. Nothing is recorded: the camera picture never leaves your phone.</p>
+      </div>
+      <figure class="point-figure">
+        <div class="phone point-phone">
+          <svg viewBox="0 0 360 720" role="img" aria-label="Illustration of POINT: an evening sky through the phone's camera with labels on three aircraft, the one nearest the crosshair highlighted, and a card at the bottom to open its flight.">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#173a6b"/><stop offset=".55" stop-color="#4d79ad"/><stop offset=".82" stop-color="#e2a57a"/><stop offset="1" stop-color="#f3c58f"/>
+              </linearGradient>
+            </defs>
+            <rect width="360" height="720" rx="26" fill="url(#sky)"/>
+            <path d="M0 640 C40 628 70 636 96 624 C120 612 150 630 176 618 C206 604 232 626 262 614 C292 602 322 622 360 610 L360 720 L0 720 Z" fill="#14202e"/>
+            <path d="M8 168 L80 210" stroke="#ffffff" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/>
+            <!-- top bar -->
+            <circle cx="30" cy="34" r="17" fill="#102742" fill-opacity=".85"/>
+            <path d="M36 34 H24 M29 28 L23 34 L29 40" stroke="#eaf1fa" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="54" y="20" width="248" height="28" rx="9" fill="#102742" fill-opacity=".85"/>
+            <text x="66" y="39" fill="#eaf1fa" font-size="13" font-weight="700">POINT · 247° · 21° up · 3 in view</text>
+            <g font-size="11" font-weight="800" text-anchor="middle">
+              <rect x="150" y="58" width="34" height="22" rx="7" fill="#34c3ff"/><text x="167" y="73" fill="#04203a">1×</text>
+              <rect x="188" y="58" width="34" height="22" rx="7" fill="#102742" fill-opacity=".85"/><text x="205" y="73" fill="#eaf1fa">2×</text>
+              <rect x="226" y="58" width="34" height="22" rx="7" fill="#102742" fill-opacity=".85"/><text x="243" y="73" fill="#eaf1fa">5×</text>
+              <rect x="270" y="58" width="40" height="22" rx="7" fill="#102742" fill-opacity=".85"/><text x="290" y="73" fill="#eaf1fa">10MI</text>
+              <rect x="314" y="58" width="40" height="22" rx="7" fill="#34c3ff"/><text x="334" y="73" fill="#04203a">25MI</text>
+            </g>
+            <!-- far aircraft -->
+            <circle cx="88" cy="214" r="9" fill="none" stroke="#fff" stroke-width="2"/>
+            <rect x="44" y="160" width="88" height="34" rx="6" fill="#000" fill-opacity=".55"/>
+            <line x1="88" y1="194" x2="88" y2="205" stroke="#fff"/>
+            <text x="52" y="175" fill="#fff" font-size="13" font-weight="800">UAL1408</text>
+            <text x="52" y="188" fill="#ffffffb3" font-size="11">36,000 ft · 19 mi</text>
+            <circle cx="278" cy="252" r="9" fill="none" stroke="#fff" stroke-width="2"/>
+            <rect x="232" y="198" width="92" height="34" rx="6" fill="#000" fill-opacity=".55"/>
+            <line x1="278" y1="232" x2="278" y2="243" stroke="#fff"/>
+            <text x="240" y="213" fill="#fff" font-size="13" font-weight="800">N724RW</text>
+            <text x="240" y="226" fill="#ffffffb3" font-size="11">4,500 ft · 6 mi</text>
+            <!-- crosshair and the aircraft nearest it -->
+            <g stroke="#fff" stroke-opacity=".8" stroke-width="2" fill="none">
+              <circle cx="180" cy="360" r="26"/><path d="M140 360 h10 M210 360 h10 M180 320 v10 M180 390 v10"/>
+            </g>
+            <path transform="translate(181 340) rotate(70 9 9) scale(.75)" d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="#eef3fa"/>
+            <circle cx="190" cy="349" r="14" fill="none" stroke="#34c3ff" stroke-width="3"/>
+            <rect x="140" y="289" width="100" height="36" rx="6" fill="#34c3ff"/>
+            <line x1="190" y1="325" x2="190" y2="335" stroke="#34c3ff" stroke-width="2"/>
+            <text x="148" y="305" fill="#04203a" font-size="13" font-weight="800">DAL2215</text>
+            <text x="148" y="318" fill="#04203a" font-size="11">11,250 ft · 8 mi</text>
+            <!-- card -->
+            <rect x="16" y="560" width="328" height="72" rx="14" fill="#102742" fill-opacity=".94"/>
+            <text x="32" y="591" fill="#eaf1fa" font-size="22" font-weight="800">DAL2215</text>
+            <text x="32" y="614" fill="#93a8c2" font-size="12">A321 · 11,250 ft · 8 mi · 312 mph</text>
+            <path transform="translate(300 576) scale(1)" d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="#34c3ff"/>
+            <text x="312" y="618" fill="#34c3ff" font-size="11" font-weight="800" text-anchor="middle">OPEN</text>
+          </svg>
+        </div>
+        <figcaption class="small muted center">Illustration of the POINT screen</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -75,7 +149,7 @@
     <div class="wrap app-grid">
       <figure class="card">
         <div class="phone small"><img src="apps/android/flight.jpg" width="578" height="1124" loading="lazy" alt="Flight view with the route map, airline logo, aircraft photo and live altitude and speed."></div>
-        <figcaption><b>Tap a plane</b>Route, airline logo, a photo of the actual aircraft, time since takeoff and time left. FLT shows the whole trip; APPR follows it in.</figcaption>
+        <figcaption><b>Tap a plane</b>Its flight opens right where you're looking: route, airline logo, a photo of the actual aircraft, time since takeoff and time left. FLT shows the whole trip; APPR follows it in.</figcaption>
       </figure>
       <figure class="card">
         <div class="phone small"><img src="apps/android/radar.jpg" width="578" height="1124" loading="lazy" alt="Radar mode with a sweeping green scope."></div>
@@ -149,7 +223,7 @@
           <li><span>3</span>If Play Protect says it doesn't recognise the app, tap <b>More details</b> and <b>Install anyway</b>.</li>
           <li><span>4</span>Open Flight Radar and allow location to see the planes around you, or skip it and pick an airport.</li>
         </ol>
-        <a class="btn btn-wide" href="download/FlightRadar-Android-1.0.6.apk" download>Download for Android</a>
+        <a class="btn btn-wide" href="download/FlightRadar-Android-1.0.7.apk" download>Download for Android</a>
         <p class="note">Updating? Install the new version over the old one. Your settings and recent flights are kept.</p>
       </div>
     </div>
@@ -232,7 +306,7 @@
 
 <footer class="footer">
   <div class="wrap">
-    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Flight Radar for Android 1.0.6</span></div>
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Flight Radar for Android 1.0.7</span></div>
     <p class="small muted"><a href="changes-android.html">Version history: what's new in each release</a></p>
     <p class="small muted">Data: adsb.lol &middot; adsb.fi &middot; adsb.im &middot; adsbdb &middot; The OpenSky Network &middot; FAA &middot; OurAirports &middot; &copy; OpenStreetMap contributors &middot; RainViewer &middot; aviationweather.gov (NOAA). Maps and imagery: Esri, HERE, Garmin, USGS, Maxar. Aircraft photos: Planespotters.net photographers (credited on each photo), Wikipedia / Wikimedia Commons. Airline logos via pics.avs.io; logos are trademarks of their airlines. Airline codes: OpenFlights. Android is a trademark of Google LLC.</p>
     <p class="small muted">Flight Radar is free for personal use. Not for navigation. &middot; <a href="windows.html">Windows</a> &middot; <a href="index.html">Display</a></p>
